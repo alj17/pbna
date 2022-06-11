@@ -15,21 +15,21 @@ const (
 	IN_TRIGGER
 	BEET
 )
- 
+
 type Mark struct {
 	value uint32
-	mask uint32
+	mask  uint32
 }
 
 type RequestID uint32
 
 type SecurityAssociation struct {
-	Source		inet.IP
-	Destination	inet.IP
-	SPI		SPI
-	Mode		Mode
-	Protocol	inet.Protocol
+	Source      inet.IP
+	Destination inet.IP
+	SPI         SPI
+	Mode        Mode
+	Protocol    inet.Protocol
 
-	Mark		Mark
-	RequestID	RequestID
+	Mark      Mark
+	RequestID RequestID
 }
