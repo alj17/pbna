@@ -1,2 +1,2 @@
 # PBNA
-Policy based network access
+A collection of tools to support policy based network access.
