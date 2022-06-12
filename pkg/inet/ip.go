@@ -33,13 +33,12 @@ func (ip IP) String() string {
 	return ip.NetIP().String()
 }
 
-type Protocol uint8
+func NetIP(ip net.IP) IP {
+	ip = ip.To4()
+	// FIXME: ip == nil?
+	return IPv4(ip[0], ip[1], ip[2], ip[3])
+}
 
-const (
-	ICMP Protocol = 1
-	IPIP          = 4
-	TCP           = 6
-	UDP           = 17
-	ESP           = 50
-	AH            = 51
-)
+func ParseIP(s string) IP {
+	return NetIP(net.ParseIP(s))
+}

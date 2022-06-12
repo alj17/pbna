@@ -62,6 +62,13 @@ func state_usage() {
 }
 
 func state_add_update(db *sad.Database, cmd string, args []string) {
+	var err error
+	//var id identifier
+
+	args, _, err = parseID(args)
+	if err != nil {
+		return
+	}
 }
 
 func state_allocspi(db *sad.Database, args []string) {
