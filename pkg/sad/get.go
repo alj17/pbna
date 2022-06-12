@@ -10,4 +10,3 @@ import (
 func (db *Database) Get(inet.IP, sa.SPI, inet.Protocol, inet.Family, sa.Mark) error {
 	return nil
 }
-

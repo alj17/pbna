@@ -14,7 +14,7 @@ import (
 //    delete.go to delete an entry from the database
 //    changes.go to retrieve changes since serial in the database
 type Database struct {
-	serial	uint64		// serial number changes on every update
+	serial uint64 // serial number changes on every update
 }
 
 // Database Notifications -- will be called with serial == 0 on startup and
@@ -26,7 +26,7 @@ type Notify interface {
 
 // Filter for db.Walk() -- see walk.go
 type Filter struct {
-	spi	sa.SPI
+	spi sa.SPI
 }
 
 // Callback for db.Walk() -- see walk.go
@@ -36,5 +36,5 @@ type Callback interface {
 
 // change (operation) to DB -- see changes.go
 type Change struct {
-	Serial	uint64	// serial number of this change
+	Serial uint64 // serial number of this change
 }

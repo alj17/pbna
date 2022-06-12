@@ -5,7 +5,7 @@ import "testing"
 
 type notifier struct {
 	serial uint64
-	t *testing.T
+	t      *testing.T
 }
 
 func (n notifier) Notify(db *Database) {
