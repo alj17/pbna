@@ -6,7 +6,7 @@ import (
 	"github.com/alj17/pbna/pkg/sad"
 )
 
-func state(args []string) {
+func xfrm_state(args []string) {
 	var cmd string
 	//var dbn sad.Notify
 	//var notify bool

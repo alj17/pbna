@@ -3,7 +3,7 @@ package main
 
 import "testing"
 
-func TestState(t *testing.T) {
+func TestXFRMState(t *testing.T) {
 	s := []string{}
-	state(s)
+	xfrm_state(s)
 }

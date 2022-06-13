@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: MIT */
 package main
 
-func policy(args []string) {
+func xfrm_policy(args []string) {
 }

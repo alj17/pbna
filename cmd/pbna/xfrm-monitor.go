@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: MIT */
 package main
 
-func monitor(args []string) {
+func xfrm_monitor(args []string) {
 }
