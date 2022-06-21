@@ -30,12 +30,14 @@ func main() {
 
 	if args[0] == "xfrm" {
 		xfrm(args[1:])
+	} else {
+		usage()
 	}
 }
 
 func usage() {
-	fmt.Println("Usage: pbna [options] xfrm|link|addr|trace ...")
-	fmt.Println("  options:")
-	fmt.Println("     -b file    # take commands from file")
+	fmt.Println("Usage:")
+	fmt.Println("  pbna xfrm|link|addr|trace ...")
+	fmt.Println("  pbna -b batch.file")
 	os.Exit(1)
 }
